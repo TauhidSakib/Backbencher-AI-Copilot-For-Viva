@@ -30,7 +30,7 @@ Backbencher AI Copilot listens to the interviewer through your system audio, tra
 - 🖼️ **Screenshot understanding** — capture a coding problem/diagram and get an answer.
 - 🫥 **Screen-share safe** — the window is hidden from screen capture; one hotkey fully hides it.
 - ⚡ **Dynamic depth** — short answers by default, full detailed explanations on demand.
-- 🥷 Stealth mode — undetectable overlay — when you share your screen, the interviewer cannot see the overlay at all. It's invisible to screen capture and screen-sharing (Zoom / Google Meet / Teams) — only you and your own eyes can see it. Viva-safe.
+- 🥷 **Stealth mode** — undetectable overlay — when you share your screen, the interviewer cannot see the overlay at all. It's invisible to screen capture and screen-sharing (Zoom / Google Meet / Teams) — only you and your own eyes can see it. Viva-safe.
   
 ## 📋 Requirements
 
