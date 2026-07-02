@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 Backbencher AI Copilot
+# Backbencher AI Copilot
 
 **A real-time, on-screen AI copilot for interviews, vivas & meetings — 100% local, free, and private.**
 
@@ -14,25 +14,25 @@ Speaks your answers as *you*, understands your field, and stays hidden during sc
 
 ---
 
-## ✨ What it is
+## What it is
 
 Backbencher AI Copilot listens to the interviewer through your system audio, transcribes the question locally, and instantly writes a strong, first-person answer in a small overlay window — using your own knowledge **and** any notes/resume you upload. Everything runs on **your machine**: no cloud, no API keys, no subscription, nothing leaves your computer.
 
-> ⚠️ **Ethics & use:** This is an educational project — great for mock interviews, practice, live-meeting note-taking, and learning how a local LLM + speech pipeline fits together. Use it honestly and within the rules of any real assessment you take part in.
+>  **Ethics & use:** This is an educational project — great for mock interviews, practice, live-meeting note-taking, and learning how a local LLM + speech pipeline fits together. Use it honestly and within the rules of any real assessment you take part in.
 
-## 🚀 Features
+## Features
 
-- 🧠 **Local LLM answers** via [Ollama](https://ollama.com) — fast (~1–2s), fully offline.
-- 🎙️ **Accurate speech-to-text** via [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — nails technical jargon ("overfitting", "deep learning") that lighter engines mangle.
-- 🎯 **Interview / Viva Topic setting** — tell it your field (e.g. *Machine Learning*, *Biology*) and it fixes mis-heard words to the right term **and** answers with that field's depth.
-- 🗣️ **First-person answers** — it speaks as *you*, defends *your* decisions, and blends in your uploaded resume/notes (RAG).
-- 📄 **Document Q&A** — drop in a PDF/DOCX and ask about it.
-- 🖼️ **Screenshot understanding** — capture a coding problem/diagram and get an answer.
-- 🫥 **Screen-share safe** — the window is hidden from screen capture; one hotkey fully hides it.
-- ⚡ **Dynamic depth** — short answers by default, full detailed explanations on demand.
-- 🥷 **Stealth mode** — undetectable overlay — when you share your screen, the interviewer cannot see the overlay at all. It's invisible to screen capture and screen-sharing (Zoom / Google Meet / Teams) — only you and your own eyes can see it. Viva-safe.
+-  **Local LLM answers** via [Ollama](https://ollama.com) — fast (~1–2s), fully offline.
+-  **Accurate speech-to-text** via [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — nails technical jargon ("overfitting", "deep learning") that lighter engines mangle.
+-  **Interview / Viva Topic setting** — tell it your field (e.g. *Machine Learning*, *Biology*) and it fixes mis-heard words to the right term **and** answers with that field's depth.
+-  **First-person answers** — it speaks as *you*, defends *your* decisions, and blends in your uploaded resume/notes (RAG).
+-  **Document Q&A** — drop in a PDF/DOCX and ask about it.
+-  **Screenshot understanding** — capture a coding problem/diagram and get an answer.
+-  **Screen-share safe** — the window is hidden from screen capture; one hotkey fully hides it.
+-  **Dynamic depth** — short answers by default, full detailed explanations on demand.
+-  **Stealth mode** — undetectable overlay — when you share your screen, the interviewer cannot see the overlay at all. It's invisible to screen capture and screen-sharing (Zoom / Google Meet / Teams) — only you and your own eyes can see it. Viva-safe.
   
-## 📋 Requirements
+## Requirements
 
 | Tool | Version | Notes |
 |------|---------|-------|
@@ -42,11 +42,11 @@ Backbencher AI Copilot listens to the interviewer through your system audio, tra
 | **Ollama** | latest | <https://ollama.com> — runs the local LLM |
 | **GPU** | NVIDIA 4 GB+ (recommended) | Runs on CPU too, just slower |
 
-> 💡 First-time setup downloads ~4 GB of models (one-time, needs internet). After that the app runs **fully offline**.
+>  First-time setup downloads ~4 GB of models (one-time, needs internet). After that the app runs **fully offline**.
 
 ---
 
-## ⚡ Quick Start (copy-paste PowerShell)
+## Quick Start (copy-paste PowerShell)
 
 Open **PowerShell**, then run these blocks in order.
 
@@ -92,7 +92,7 @@ In a **separate** PowerShell window (leave it open):
 ollama serve
 ```
 
-> 🏎️ **Faster on a small GPU (optional but recommended):** let Ollama keep both models in memory so it never reloads them:
+>  **Faster on a small GPU (optional but recommended):** let Ollama keep both models in memory so it never reloads them:
 > ```powershell
 > $env:OLLAMA_MAX_LOADED_MODELS = "2"
 > ollama serve
@@ -108,7 +108,7 @@ That's it — the overlay appears. Press **Alt+Shift+T** to start listening, the
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+## Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
@@ -123,7 +123,7 @@ That's it — the overlay appears. Press **Alt+Shift+T** to start listening, the
 | `Alt+Shift+←/→/↑/↓` | Move the window |
 | `Alt+Shift+1…4` | Window size presets |
 
-## ⚙️ Configuration
+## Configuration
 
 Open **Settings** (gear icon) in the app:
 
@@ -141,7 +141,7 @@ Open **Settings** (gear icon) in the app:
 | `OLLAMA_NUM_GPU` | Force GPU layers (default `99` = all on GPU; set `0` for CPU/auto) |
 | `OLLAMA_NUM_CTX` / `OLLAMA_NUM_PREDICT` | Context / output token limits |
 
-## 🧩 How it works
+## How it works
 
 <div align="center">
 
@@ -153,7 +153,7 @@ Open **Settings** (gear icon) in the app:
 - The **LLM** runs on the GPU via Ollama for ~1–2s answers.
 - The **Interview Topic** biases both the transcriber's vocabulary and the LLM's prompt.
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 | Problem | Fix |
 |---------|-----|
@@ -163,7 +163,7 @@ Open **Settings** (gear icon) in the app:
 | **Model not found** | Run `ollama pull qwen2.5vl:3b` and `ollama pull nomic-embed-text`. |
 | **Wrong technical words transcribed** | Set your **Interview / Viva Topic** in Settings before starting. |
 
-## 🏗️ Build a standalone .exe (optional)
+## Build a standalone .exe (optional)
 
 ```powershell
 npm run build:win
@@ -171,11 +171,11 @@ npm run build:win
 
 Output lands in `dist/`.
 
-## 🙏 Credits
+## Credits
 
 
 - Built with [Electron](https://electronjs.org), [Ollama](https://ollama.com), and [faster-whisper](https://github.com/SYSTRAN/faster-whisper).
 
-## 📄 License
+## License
 
 [MIT](LICENSE) © 2026 Tauhidur Rahman Sakib
