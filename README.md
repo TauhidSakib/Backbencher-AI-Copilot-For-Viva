@@ -143,13 +143,11 @@ Open **Settings** (gear icon) in the app:
 
 ## 🧩 How it works
 
-```
-System audio ──► faster-whisper (local, CPU) ──► live transcript
-                                                      │
-Your resume / PDFs ──► embeddings (nomic) ──► RAG ────┤
-                                                      ▼
-                     Ollama LLM (qwen2.5vl:3b, GPU)  ──►  first-person answer in the overlay
-```
+<div align="center">
+
+![Backbencher AI Copilot Architecture](assets/architecture.png)
+
+</div>
 
 - The **speech-to-text** worker (`src/services/vosk/transcribe_whisper.py`) runs on CPU so it never competes with the LLM for GPU memory.
 - The **LLM** runs on the GPU via Ollama for ~1–2s answers.
