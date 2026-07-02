@@ -174,7 +174,7 @@ Output lands in `dist/`.
 
 ## 🙏 Credits
 
-- Originally forked from the open-source **Open-Cluely** project, then re-architected to run **fully offline & free** (Vosk/AssemblyAI → faster-whisper, Gemini/cloud → local Ollama) and rebranded.
+
 - Built with [Electron](https://electronjs.org), [Ollama](https://ollama.com), and [faster-whisper](https://github.com/SYSTRAN/faster-whisper).
 
 ## 📄 License
