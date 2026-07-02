@@ -127,7 +127,7 @@ That's it — the overlay appears. Press **Alt+Shift+T** to start listening, the
 
 Open **Settings** (gear icon) in the app:
 
-- **Interview / Viva Topic** — paste your subject (e.g. *"Machine Learning & Deep Learning — CNNs, overfitting, regularization"*). Set this **before** you start transcription for best speech accuracy. This is the single biggest quality lever.
+- **Interview / Viva Topic** — paste your subject (e.g. *"Machine Learning & Deep Learning etc. "*). Set this **before** you start transcription for best speech accuracy. This is the single biggest quality lever.
 - **Ollama model / base URL** — defaults to `qwen2.5vl:3b` at `http://localhost:11434`.
 - **Programming language** — preferred language for code answers.
 - **Window opacity** and **theme**.
