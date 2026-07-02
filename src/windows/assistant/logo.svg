@@ -1,0 +1,32 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Backbencher AI Copilot">
+  <defs>
+    <linearGradient id="bbBg" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="bbCap" x1="60" y1="74" x2="196" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E5ECFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App badge -->
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#bbBg)"/>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="#000000" opacity="0.04"/>
+
+  <!-- Graduation cap (the clever "backbencher" / student) -->
+  <!-- mortarboard top -->
+  <path d="M128 74 L210 112 L128 150 L46 112 Z" fill="url(#bbCap)"/>
+  <!-- cap head/base under the board -->
+  <path d="M92 128 L128 145 L164 128 L164 162 C164 174 148 184 128 184 C108 184 92 174 92 162 Z" fill="#DBE4FF"/>
+  <path d="M92 128 L128 145 L164 128 L164 138 C164 150 148 159 128 159 C108 159 92 150 92 138 Z" fill="#C7D4FF" opacity="0.8"/>
+
+  <!-- tassel -->
+  <path d="M128 150 L188 122 L188 168" stroke="#FACC15" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="188" cy="176" r="9" fill="#FACC15"/>
+
+  <!-- AI spark -->
+  <path d="M196 60 L201 75 L216 80 L201 85 L196 100 L191 85 L176 80 L191 75 Z" fill="#FFFFFF"/>
+  <path d="M70 158 L73 167 L82 170 L73 173 L70 182 L67 173 L58 170 L67 167 Z" fill="#FFFFFF" opacity="0.85"/>
+</svg>
