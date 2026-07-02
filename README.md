@@ -52,8 +52,8 @@ Open **PowerShell**, then run these blocks in order.
 ### 1. Clone the project
 
 ```powershell
-git clone https://github.com/<your-username>/Backbencher-AI-Copilot.git
-cd Backbencher-AI-Copilot
+git clone https://github.com/TauhidSakib/Backbencher-AI-Copilot-For-Viva.git
+cd Backbencher-AI-Copilot-For-Viva
 ```
 
 ### 2. Run the automated setup
